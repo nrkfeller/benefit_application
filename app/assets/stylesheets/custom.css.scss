@@ -1,0 +1,43 @@
+$navbar-default-bg: #FF7F50;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+}
+#logo:hover{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    padding-top: 40px;
+}
+
+.nav_item{
+    margin-right: 25px;
+    padding-right: 30px;
+    float: right;
+    margin-top: 20px;
+    color: white;
+    text-transform: none;
+    font-weight: bold;
+    font-family: 'Helvetica';
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
