@@ -1,4 +1,5 @@
-$navbar-default-bg: #FF7F50;
+
+$navbar-default-bg: #4682B4;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -40,4 +41,71 @@ a:hover{
 
 a {
     color: inherit;
+}
+
+.jumbotron {
+    position: relative;
+    background-size: cover;
+    background: #000 url("best version.gif") center center;
+    width: 100%;
+    height: 375px;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0px
+}
+
+body {
+  border-color: #1abc9c;
+}
+
+.container {
+    
+}
+
+#jumbotitle {
+    float: center;
+    margin-top: 20px;
+    text-transform: none;
+    font-weight: bold;
+    font-family: 'Helvetica';
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+}
+
+.btn {
+    border-style: solid;
+    border-width: 2px;
+    width: 18%;
+    font-family: 'Helvetica';
+    font-size: 1em;
+    color: #4682B4;
+}
+
+.btnright{
+    float: left;
+}
+
+.btnleft{
+    float: left;
+}
+
+.row{
+    padding-right: 425px;
+    padding-left: 425px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-color: #F5FAFF;
+    text-align: center;
+    top: -20px;
+}
+
+.left {
+    font-size: 1.2em;
+    font-family: 'Helvetica';
+    color: #4D4D4D;
+}
+
+.midrow {
+    font-size: 1.8em;
 }
