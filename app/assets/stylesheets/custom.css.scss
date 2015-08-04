@@ -1,20 +1,23 @@
 
-$navbar-default-bg: #4682B4;
+$navbar-default-bg: #3a3f41;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('//fonts.googleapis.com/css?family=Poiret+One|Arvo|Questrial');
 
 #logo{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    padding-right: 30px;
     float: left;
     font-size: 1em;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: -1px;
-    padding-top: 9px;
     font-weight: bold;
 }
+
 #logo:hover{
     color: white;
     text-decoration: none;
@@ -28,14 +31,15 @@ body{
     margin-right: 25px;
     padding-right: 30px;
     float: right;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: white;
     text-transform: none;
-    font-weight: bold;
-    font-family: 'Helvetica';
+    font-size: 1.3em;
+    font-family: 'Questrial', sans-serif;
 }
 a:hover{
-    color: white;
+    color: gray;
     text-decoration: none;
 }
 
@@ -43,59 +47,32 @@ a {
     color: inherit;
 }
 
-.jumbotron {
-    position: relative;
-    background-size: cover;
-    background: #000 url("best version.gif") center center;
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    overflow: hidden;
-    margin-bottom: 0px
-}
-
-body {
-  border-color: #1abc9c;
-}
-
-.container {
-    
-}
-
-#jumbotitle {
+#title {
     float: center;
+    padding-top: 180px;
+    padding-bottom: 180px;
     margin-top: 20px;
     text-transform: none;
     font-weight: bold;
-    font-family: 'Helvetica';
+    font-family: 'Arvo', serif;
     font-size: 3em;
-    color: #fff;
+    color: black;
     text-align: center;
+    background-color: #f4f4f4;
 }
 
 .btn {
     border-style: solid;
     border-width: 2px;
-    width: 18%;
-    font-family: 'Helvetica';
-    font-size: 1em;
-    color: #4682B4;
+    width: 10%;
+    font-size: 0.7em;
+    color: white;
 }
-
-.btnright{
-    float: left;
-}
-
-.btnleft{
-    float: left;
-}
-
 .row{
     padding-right: 425px;
     padding-left: 425px;
     padding-top: 30px;
-    padding-bottom: 15px;
-    background-color: #F5FAFF;
+    padding-bottom: 50px;
     text-align: center;
     top: -20px;
 }
@@ -104,17 +81,39 @@ body {
     padding-right: 425px;
     padding-left: 425px;
     padding-top: 30px;
-    padding-bottom: 15px;
-    background-color: #ffffff;
+    padding-bottom: 275px;
     text-align: center;
     top: -20px;
+    background-color: #f4f4f4;
 }
+
 .left {
     font-size: 1.2em;
-    font-family: 'Helvetica';
-    color: #4D4D4D;
+    color: #47525C;
 }
 
 .midrow {
     font-size: 1.8em;
+    color: #3a3f41;
+}
+
+.foottitle{
+    font-size: 1.8em;
+    color: white;
+}
+
+footer{
+    padding-right: 425px;
+    padding-left: 425px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    top: -20px;
+    background-color:#3a3f41;
+    color: #939393;
+    font-family: 'Questrial', sans-serif;
+}
+
+h3{
+    font-family: 'Poiret One', cursive;
 }

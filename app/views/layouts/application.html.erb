@@ -5,13 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Sans">
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One|Arvo|Questrial' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <%= csrf_meta_tags %>
 </head>
 
 <body>
   <header class='navbar navbar-fixed-top navbar-default'>
     <div class="container">
-      <%= link_to 'BlastLogo', "", id: 'logo' %>
+      
+      <%= link_to 'BlastLogo', root_path, id: 'logo' %>
       
       <div class="nav_item">
         <%= link_to 'Contact Us', contact_path %>
@@ -29,6 +32,59 @@
   </header>
 
 <%= yield %>
+
+<footer>
+  <div>
+      <div class="col-lg-3">
+        <h2 class="foottitle">
+          BLASTLOGO
+        </h2>
+        <br>
+        <p>Blast.inc</p>
+        <br>
+        <p>A Montreal Company :)</p>
+        <br>
+        <p>Terms, Privacy & Copyright</p>
+        
+      </div>
+      <div class="col-lg-3">
+        <h2 class="foottitle">
+          Social Media
+        </h2>
+        <p><i class='fa fa-facebook'></i>&nbsp<%= link_to 'Facebook', root_path, id: 'footlink' %></p>
+        <p><i class='fa fa-twitter'></i>&nbsp<%= link_to 'Twitter', root_path, id: 'footlink' %></p>
+        <p><i class='fa fa-google-plus'></i>&nbsp<%= link_to 'GooglePlus', root_path, id: 'footlink' %></p>
+        <p><i class='fa fa-github'></i>&nbsp<%= link_to 'Github', root_path, id: 'footlink' %></p>
+        <p><i class='fa fa-instagram'></i>&nbsp<%= link_to 'Instagram', root_path, id: 'footlink' %></p>
+        
+      </div>
+      <div class="col-lg-3">
+        <h2 class="foottitle">
+          Packages
+        </h2>
+        <p><%= link_to 'Basic Package', root_path, id: 'footlink' %></p>
+        <p><%= link_to '401k Package', root_path, id: 'footlink' %></p>
+        <p><%= link_to 'Dental Package', root_path, id: 'footlink' %></p>
+        <p><%= link_to 'Full Package', root_path, id: 'footlink' %></p>
+      </div>
+      <div class="col-lg-3">
+        <h2 class="foottitle">
+          Community
+        </h2>
+        <p><%= link_to 'Blog', root_path, id: 'footlink' %></p>
+        <p><%= link_to 'Press', root_path, id: 'footlink' %></p>
+        <p><%= link_to 'Careers', root_path, id: 'footlink' %></p>
+        <p><%= link_to 'Events', root_path, id: 'footlink' %></p>
+        <p><%= link_to 'Partners', root_path, id: 'footlink' %></p>
+        <p><%= link_to 'Customers', root_path, id: 'footlink' %></p>
+        <p><%= link_to 'About', root_path, id: 'footlink' %></p>
+        <p><%= link_to 'FAQ', root_path, id: 'footlink' %></p>
+        <p><%= link_to 'Contact Us', root_path, id: 'footlink' %></p>
+      </div>
+  </div>
+  <p>Copyright &copy 2015</p>
+</footer>
+
 
 </body>
 </html>
