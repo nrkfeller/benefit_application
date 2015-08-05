@@ -31,7 +31,7 @@ gem 'haml', '~> 4.0.6'
 gem 'simple_form', '~> 3.1.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'masonry-rails', '~> 0.2.4'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

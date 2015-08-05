@@ -1,7 +1,12 @@
 .page
-    %h1 Our Benefits
-    - @benefits.each do |benefit|
-        = link_to (image_tag benefit.image.url(:medium)), benefit
-        %h3= link_to benefit.title, benefit
-        
-    = link_to "New Benefit", new_benefit_path, class: "btn btn-default"
+    #benefits.transitions-enabled
+        %h1 Our Benefits
+        %br/
+        %br/
+        - @benefits.each do |benefit|
+            .box.panel.panel-default
+                = link_to (image_tag benefit.image.url), benefit
+                .panel-body
+                    %h3= link_to benefit.title, benefit
+            
+        = link_to "New Benefit", new_benefit_path, class: "btn btn-default"
