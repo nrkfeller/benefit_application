@@ -1,3 +1,6 @@
-%h1 Edit
-= render "form"
-= link_to "Cancel", benefit_path
+
+.page
+  %h1 Edit
+  = image_tag @benefit.image.url(:medium)
+  = render "form"
+  = link_to "Cancel", benefit_path

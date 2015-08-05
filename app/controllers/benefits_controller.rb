@@ -40,7 +40,7 @@ class BenefitsController < ApplicationController
     
     private
         def benefit_params
-            params.require(:benefit).permit(:title, :description)
+            params.require(:benefit).permit(:title, :description, :image)
         end
         
         def find_benefit
