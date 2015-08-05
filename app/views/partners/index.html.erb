@@ -1,0 +1,39 @@
+<div id="title">
+  <h2>Our Benefit Partners</h3>
+  <h4>Check out the benefits they are offering!</h4>
+</div>
+<div class="row">
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Partners</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @partners.each do |partner| %>
+      <tr>
+        <td><%= partner.name %></td>
+        <td><%= partner.email %></td>
+        <td><%= link_to 'Show', partner %></td>
+        <td><%= link_to 'Edit', edit_partner_path(partner) %></td>
+        <td><%= link_to 'Destroy', partner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Partner', new_partner_path %>
+
+<br>
+<br>
+<br>
+</div>

@@ -1,0 +1,6 @@
+.row
+    %h1 Our Benefits
+    - @benefits.each do |benefit|
+        %h3= link_to benefit.title, benefit
+        
+    = link_to "New Benefit", new_benefit_path, class: "btn btn-default"

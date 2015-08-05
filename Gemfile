@@ -25,10 +25,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.5.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'haml', '~> 4.0.6'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'simple_form', '~> 3.1.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

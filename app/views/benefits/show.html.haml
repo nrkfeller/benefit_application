@@ -1,0 +1,8 @@
+    
+.row   
+    %h3= @benefit.title
+    %p= @benefit.description
+    
+    = link_to 'Back', benefits_path, class: "btn btn-default"
+    = link_to 'Edit', edit_benefit_path, class: "btn btn-default"
+    = link_to "Delete", benefit_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"

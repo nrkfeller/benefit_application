@@ -1,0 +1,17 @@
+
+= simple_form_for @benefit, html: { multipart: true } do |f|
+	- if @benefit.errors.any?
+		#errors
+			%h2
+				= pluralize(@benefit.errors.count, "error")
+				prevented this benefit from saving
+			%ul
+				- @benefit.errors.full_messages.each do |msg|
+					%li= msg
+	.form-group
+		= f.input :title, input_html: { class: 'form-control' }
+
+	.form-group
+		= f.input :description, input_html: { class: 'form-control' }
+
+	= f.button :submit, class: "btn btn-primary"

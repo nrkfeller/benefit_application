@@ -26,10 +26,17 @@
         <%= link_to 'About', about_path %>
       </div>
       <div class="nav_item">
-        <%= link_to 'Benefits', "" %>
+        <%= link_to 'Partners', partners_path %>
+      </div>
+      <div class="nav_item">
+        <%= link_to 'Benefits', benefits_path %>
       </div>
     </div>
   </header>
+  
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, class: "aler alert-info" -%>
+  <% end %>
 
 <%= yield %>
 
@@ -51,35 +58,41 @@
         <h2 class="foottitle">
           Social Media
         </h2>
-        <p><i class='fa fa-facebook'></i>&nbsp<%= link_to 'Facebook', root_path, id: 'footlink' %></p>
-        <p><i class='fa fa-twitter'></i>&nbsp<%= link_to 'Twitter', root_path, id: 'footlink' %></p>
-        <p><i class='fa fa-google-plus'></i>&nbsp<%= link_to 'GooglePlus', root_path, id: 'footlink' %></p>
-        <p><i class='fa fa-github'></i>&nbsp<%= link_to 'Github', root_path, id: 'footlink' %></p>
-        <p><i class='fa fa-instagram'></i>&nbsp<%= link_to 'Instagram', root_path, id: 'footlink' %></p>
+        <div class="footlink">
+          <p><i class='fa fa-facebook'></i>&nbsp<%= link_to 'Facebook', root_path %></p>
+          <p><i class='fa fa-twitter'></i>&nbsp<%= link_to 'Twitter', root_path %></p>
+          <p><i class='fa fa-google-plus'></i>&nbsp<%= link_to 'GooglePlus', root_path %></p>
+          <p><i class='fa fa-github'></i>&nbsp<%= link_to 'Github', root_path %></p>
+          <p><i class='fa fa-instagram'></i>&nbsp<%= link_to 'Instagram', root_path %></p>
+        </div>
         
       </div>
       <div class="col-lg-3">
         <h2 class="foottitle">
           Packages
         </h2>
-        <p><%= link_to 'Basic Package', root_path, id: 'footlink' %></p>
-        <p><%= link_to '401k Package', root_path, id: 'footlink' %></p>
-        <p><%= link_to 'Dental Package', root_path, id: 'footlink' %></p>
-        <p><%= link_to 'Full Package', root_path, id: 'footlink' %></p>
+        <div class="footlink">
+          <p><%= link_to 'Basic Package', root_path %></p>
+          <p><%= link_to '401k Package', root_path %></p>
+          <p><%= link_to 'Dental Package', root_path %></p>
+          <p><%= link_to 'Full Package', root_path %></p>
+        </div>
       </div>
       <div class="col-lg-3">
         <h2 class="foottitle">
           Community
         </h2>
-        <p><%= link_to 'Blog', root_path, id: 'footlink' %></p>
-        <p><%= link_to 'Press', root_path, id: 'footlink' %></p>
-        <p><%= link_to 'Careers', root_path, id: 'footlink' %></p>
-        <p><%= link_to 'Events', root_path, id: 'footlink' %></p>
-        <p><%= link_to 'Partners', root_path, id: 'footlink' %></p>
-        <p><%= link_to 'Customers', root_path, id: 'footlink' %></p>
-        <p><%= link_to 'About', root_path, id: 'footlink' %></p>
-        <p><%= link_to 'FAQ', root_path, id: 'footlink' %></p>
-        <p><%= link_to 'Contact Us', root_path, id: 'footlink' %></p>
+        <div class='footlink'>
+          <p><%= link_to 'Blog', root_path %></p>
+          <p><%= link_to 'Press', root_path %></p>
+          <p><%= link_to 'Careers', root_path %></p>
+          <p><%= link_to 'Events', root_path %></p>
+          <p><%= link_to 'Partners', root_path %></p>
+          <p><%= link_to 'Customers', root_path %></p>
+          <p><%= link_to 'About', root_path %></p>
+          <p><%= link_to 'FAQ', root_path %></p>
+          <p><%= link_to 'Contact Us', root_path %></p>
+        </div>
       </div>
   </div>
   <p>Copyright &copy 2015</p>
