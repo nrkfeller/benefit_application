@@ -3,6 +3,8 @@
     = image_tag @benefit.image.url(:medium)
     %h3= @benefit.title
     %p= @benefit.description
+    Braught to you by
+    %p= @benefit.user.email
     
     
     = link_to 'Back', benefits_path, class: "btn btn-default"
