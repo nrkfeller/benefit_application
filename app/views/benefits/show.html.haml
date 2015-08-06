@@ -5,8 +5,10 @@
     %p= @benefit.description
     Braught to you by
     %p= @benefit.user.email
-    
-    
+    %br
+    = link_to 'Redeem!', "", class: "btn btn-success btn1"
     = link_to 'Back', benefits_path, class: "btn btn-default"
-    = link_to 'Edit', edit_benefit_path, class: "btn btn-default"
-    = link_to "Delete", benefit_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
+    - if current_user.admin?
+        
+        = link_to 'Edit', edit_benefit_path, class: "btn btn-default"
+        = link_to "Delete", benefit_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"

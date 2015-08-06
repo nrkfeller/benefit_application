@@ -8,5 +8,9 @@
                 = link_to (image_tag benefit.image.url), benefit
                 .panel-body
                     %h3= link_to benefit.title, benefit
-            
-        = link_to "New Benefit", new_benefit_path, class: "btn btn-default"
+                    
+        = link_to "Partners", partners_path, class: "btn btn-default"
+        - if current_user.admin?
+            = link_to "New Benefit", new_benefit_path, class: "btn btn-default"
+        
+        %br

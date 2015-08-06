@@ -1,5 +1,6 @@
 class BenefitsController < ApplicationController
     before_action :find_benefit, only: [:show, :edit, :update, :destroy]
+    before_action :require_admin, only: [:edit, :update, :destroy]
     
     def index
         @benefits = Benefit.all.order("created_at DESC")
@@ -45,5 +46,11 @@ class BenefitsController < ApplicationController
         
         def find_benefit
             @benefit = Benefit.find(params[:id])
+        end
+        
+        def require_admin
+           if !current_user.admin?
+               redirect_to benefits_path
+           end
         end
 end
