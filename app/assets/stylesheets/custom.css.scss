@@ -81,6 +81,12 @@ a {
     font-size: 1em;
     color: white;
 }
+.btn2{
+    width: 30%;
+}
+.btn-partners{
+    width: 20%;
+}
 .row{
     padding-right: 425px;
     padding-left: 425px;
@@ -104,6 +110,15 @@ a {
     padding-top: 30px;
     padding-bottom: 275px;
     text-align: center;
+    top: -20px;
+    background-color: #f4f4f4;
+}
+.signin{
+    padding-right: 425px;
+    padding-left: 425px;
+    padding-top: 80px;
+    padding-bottom: 550px;
+    text-align: left;
     top: -20px;
     background-color: #f4f4f4;
 }

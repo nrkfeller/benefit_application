@@ -9,8 +9,8 @@
                 .panel-body
                     %h3= link_to benefit.title, benefit
                     
-        = link_to "Partners", partners_path, class: "btn btn-default"
-        - if current_user.admin?
+        = link_to "See All our Partners", partners_path, class: "btn btn-default btn-partners"
+        - if current_user.try(:admin?)
             = link_to "New Benefit", new_benefit_path, class: "btn btn-default"
         
         %br

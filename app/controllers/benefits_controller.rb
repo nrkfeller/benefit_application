@@ -1,6 +1,6 @@
 class BenefitsController < ApplicationController
     before_action :find_benefit, only: [:show, :edit, :update, :destroy]
-    before_action :require_admin, only: [:edit, :update, :destroy]
+    before_action :require_admin, only: [:new, :edit, :update, :destroy]
     
     def index
         @benefits = Benefit.all.order("created_at DESC")
