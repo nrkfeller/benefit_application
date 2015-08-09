@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   
   resources :benefits
+  resources :categories, only: [:new, :create, :show]
 end

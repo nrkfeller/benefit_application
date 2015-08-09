@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150806212439) do
+ActiveRecord::Schema.define(version: 20150809072021) do
+
+  create_table "benefit_categories", force: :cascade do |t|
+    t.integer "category_id"
+    t.integer "benefit_id"
+  end
 
   create_table "benefits", force: :cascade do |t|
     t.string   "title"
@@ -26,6 +31,10 @@ ActiveRecord::Schema.define(version: 20150806212439) do
   end
 
   add_index "benefits", ["user_id"], name: "index_benefits_on_user_id"
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+  end
 
   create_table "partners", force: :cascade do |t|
     t.string   "name"

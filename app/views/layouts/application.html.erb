@@ -20,6 +20,7 @@
     <div class="container">
       
       <%= link_to 'BlastLogo', root_path, id: 'logo' %>
+      <%= link_to image_tag("hiringlogo.png", alt: "rss feed", height: 35, width: 120), root_path, id: 'hlogo' %>
       <% if user_signed_in? %>
         <div class="nav_item">
           <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
