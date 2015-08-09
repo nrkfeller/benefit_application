@@ -3,7 +3,7 @@
         %h1 Our Benefits
         %br/
         %br/
-        - @benefits.each do |benefit|
+        - @category.benefits.each do |benefit|
             .box.panel.panel-default
                 = link_to (image_tag benefit.image.url), benefit
                 .panel-body
