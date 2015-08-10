@@ -12,7 +12,7 @@ class BenefitsController < ApplicationController
     
     def create
         @benefit = Benefit.create(benefit_params)
-        
+        @benefit.user = current_user
         if @benefit.save
             redirect_to @benefit, notice: "Create Benefit"
         else

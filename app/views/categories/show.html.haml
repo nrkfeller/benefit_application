@@ -1,4 +1,8 @@
 .page
+    %ul.nav.nav-pills.nav-justified
+        %li= link_to "All", benefits_path
+        - Category.all.each do |cat|
+            %li= link_to cat.name, category_path(cat)
     #benefits.transitions-enabled
         %h1 Our Benefits
         %br/
