@@ -43,7 +43,31 @@ body{
     font-size: 1.3em;
     font-family: 'Questrial', sans-serif;
 }
-
+.benbar{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #656565;
+    margin-top: -125px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+    background-color:white;
+    border-style: solid;
+    border-color: #CACACA;
+    border-width: 1px;
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 1px;
+}
+.benbar:hover{
+    text-decoration: underline;
+}
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: white;
+    color: #656565;
+}
 a:hover{
     color: white;
     text-decoration: underline;
@@ -66,7 +90,10 @@ a {
     text-align: center;
     background-color: #f4f4f4;
 }
-
+.benpage{
+    padding-top: 110px;
+    background-color: white;
+}
 .btn {
     border-style: solid;
     border-width: 2px;

@@ -1,21 +1,21 @@
-.page
-    %ul.nav.nav-pills.nav-justified
-        %li= link_to "All", benefits_path
-        - Category.all.each do |cat|
-            %li= link_to cat.name, category_path(cat)
-    #benefits.transitions-enabled
-        %h1 Our Benefits
-        %br/
-        %br/
-        - @benefits.each do |benefit|
-            .box.panel.panel-default
-                = link_to (image_tag benefit.image.url), benefit
-                .panel-body
-                    %h3= link_to benefit.title, benefit
-                    %h5 Tags
-                    = render benefit.categories
-        = link_to "See All our Partners", partners_path, class: "btn btn-default btn-partners"
-        - if current_user.try(:admin?)
-            = link_to "New Benefit", new_benefit_path, class: "btn btn-default"
-        
-        %br
+.benpage
+    .page
+        %ul.nav.nav-pills.nav-justified.benbar
+            %li= link_to "All", benefits_path
+            - Category.all.each do |cat|
+                %li= link_to cat.name, category_path(cat)
+        #benefits.transitions-enabled
+            %h1 Our Benefits
+            %br/
+            - @benefits.each do |benefit|
+                .box.panel.panel-default
+                    = link_to (image_tag benefit.image.url), benefit
+                    .panel-body
+                        %h3= link_to benefit.title, benefit
+                        %h5 Tags
+                        = render benefit.categories
+            = link_to "See All our Partners", partners_path, class: "btn btn-default btn-partners"
+            - if current_user.try(:admin?)
+                = link_to "New Benefit", new_benefit_path, class: "btn btn-default"
+            
+            %br
