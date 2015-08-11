@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  before_action :require_admin, only: [:new]
   
   def show
     @category = Category.find(params[:id])
@@ -21,5 +22,11 @@ class CategoriesController < ApplicationController
   private
     def category_params
       params. require(:category).permit(:name)
+    end
+    
+    def require_admin
+      if !current_user.admin?
+        redirect_to benefits_path
+      end
     end
 end

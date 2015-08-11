@@ -68,9 +68,17 @@ body{
     background-color: white;
     color: #656565;
 }
+.nav-pills > li > a:hover {
+    text-decoration: none;
+}
+.nav-pills {
+    > li > a:hover {
+        text-decoration: none;
+    }
+}
 a:hover{
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a {
