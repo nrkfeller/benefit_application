@@ -41,7 +41,7 @@ class BenefitsController < ApplicationController
     
     private
         def benefit_params
-            params.require(:benefit).permit(:title, :description, :image, category_ids: [])
+            params.require(:benefit).permit(:title, :description, :image, :partner_id, category_ids: [])
         end
         
         def find_benefit

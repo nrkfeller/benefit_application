@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150809072021) do
+ActiveRecord::Schema.define(version: 20150811204248) do
 
   create_table "benefit_categories", force: :cascade do |t|
     t.integer "category_id"
@@ -28,8 +28,10 @@ ActiveRecord::Schema.define(version: 20150809072021) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.integer  "user_id"
+    t.integer  "partner_id"
   end
 
+  add_index "benefits", ["partner_id"], name: "index_benefits_on_partner_id"
   add_index "benefits", ["user_id"], name: "index_benefits_on_user_id"
 
   create_table "categories", force: :cascade do |t|
