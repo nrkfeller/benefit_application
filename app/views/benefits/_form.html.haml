@@ -16,5 +16,12 @@
 
 	.form-group
 		= f.input :description, input_html: { class: 'form-control' }
+	
+	%p Categories:
+	.form-group
+		= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cbi|
+			= cbi.label(class: "checkbox-inline input_checkbox") {cbi.check_box(class: "checkbox") +cbi.text}
+			&nbsp
+	
 
 	= f.button :submit, class: "btn btn-primary"
