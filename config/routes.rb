@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'blog', to: 'pages#blog'
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
-  
+  resources :users, only: [:show]
   resources :benefits
   resources :categories, only: [:new, :create, :show]
 end

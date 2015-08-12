@@ -1,14 +1,36 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @partner.name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @partner.email %>
-</p>
-
-<%= link_to 'Edit', edit_partner_path(@partner) %> |
-<%= link_to 'Back', partners_path %>
+<div class="page">
+  <p id="notice"><%= notice %></p>
+  <div>
+    <div class="col-lg-4 signinfield">
+      <p>
+        <strong>Name:</strong>
+        <%= @partner.name %>
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <%= @partner.email %>
+      </p>
+    </div>
+    <div class="col-lg-8 signinfield">
+      <p>
+        <strong>#logo</strong>
+      </p>
+    </div>
+  </div>
+  <div class="col-lg-12">
+    <% @partner.benefits.each do |benefit| %>
+      <div class="box panel panel-default">
+        <%= link_to (image_tag benefit.image.url), benefit %>
+        <div class="panel-body">
+          <h3><%= link_to benefit.title, benefit %></h3>
+          <h5>Tags:</h5>
+          <%= render benefit.categories %>
+        </div>
+      </div>
+    <% end %>
+    <br>
+    <%= link_to 'Edit', edit_partner_path(@partner) %> |
+    <%= link_to 'Back', partners_path %>
+  </div>
+  
+</div>

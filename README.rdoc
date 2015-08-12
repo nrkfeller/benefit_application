@@ -1,8 +1,14 @@
 add categories to benefits
 ad benefits taskbar
 add categories when building a benefit
+add dropdown for patners
+User Profile page for redeemed benefits
 mailers to benefits, contacts
-fix rendering on benefts page
+blog page
+contact us page
+about page
+social media links
 
 *underline hover benefits index
 *overlaping panels benefits index
+*fix panels in partner page
