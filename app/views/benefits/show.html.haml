@@ -8,7 +8,7 @@
     %h5 Tags
     = render @benefit.categories
     %br
-    = link_to 'Redeem!', "", class: "btn btn-success btn1"
+    = link_to 'Redeem!', new_user_benefit_path(current_user, @benefit), class: "btn btn-success btn1"
     = link_to 'Back', benefits_path, class: "btn btn-default"
     - if current_user.try(:admin?)
         

@@ -1,0 +1,2 @@
+module UserBenefitsHelper
+end
