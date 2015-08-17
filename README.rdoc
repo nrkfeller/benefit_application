@@ -7,7 +7,7 @@ mailers to benefits, contacts
 blog page
 contact us page
 about page
-social media links
+social media + other links
 
 *underline hover benefits index
 *overlaping panels benefits index

@@ -3,7 +3,8 @@ class BenefitsController < ApplicationController
     before_action :require_admin, only: [:new, :edit, :update, :destroy]
     
     def index
-        @benefits = Benefit.all.order("created_at DESC")
+        @benefits = Benefit.search(params[:search])
+        #@benefits = Benefit.all.order("created_at DESC")
     end
     
     def new

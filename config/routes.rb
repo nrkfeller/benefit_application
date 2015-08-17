@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'blog', to: 'pages#blog'
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
-  resources :users
+  resources :users # should be show only
   resources :benefits
   resources :categories, only: [:new, :create, :show]
   resources :users, only: [] do
