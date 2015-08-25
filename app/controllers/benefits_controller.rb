@@ -13,7 +13,7 @@ class BenefitsController < ApplicationController
     
     def create
         @benefit = Benefit.create(benefit_params)
-        @benefit.user = current_user
+        @benefit.user_id = current_user.id
         if @benefit.save
             redirect_to @benefit, notice: "Create Benefit"
         else
@@ -42,7 +42,7 @@ class BenefitsController < ApplicationController
     
     private
         def benefit_params
-            params.require(:benefit).permit(:title, :description, :image, :partner, category_ids: [])
+            params.require(:benefit).permit(:title, :description, :image, :partner_id, category_ids: [])
         end
         
         def find_benefit

@@ -18,7 +18,7 @@
 		= f.input :description, input_html: { class: 'form-control' }
 		
 	.form-group
-	= f.collection_select :partner_id, Partner.order(:name),:id,:name, include_blank: true
+		= f.collection_select :partner_id, Partner.all, :id, :name, include_blank: true
 	
 	%p Categories:
 	.form-group
