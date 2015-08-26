@@ -15,7 +15,7 @@ gem 'haml', '~> 4.0.6'
 gem 'simple_form', '~> 3.1.0'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'devise', '~> 3.5.1'
-
+gem 'will_paginate', '~> 3.0.7'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'

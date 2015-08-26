@@ -60,7 +60,7 @@ body{
     border-left: 1px;
 }
 .benbar:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 .nav>li>a:hover,
 .nav>li>a:focus {
@@ -102,6 +102,9 @@ a {
     padding-top: 110px;
     background-color: white;
 }
+.benback{
+    background-color: #f4f4f4;
+}
 .btn {
     border-style: solid;
     border-width: 2px;
@@ -132,7 +135,6 @@ a {
 .form-controlsearch{
     width: 40%;
     text-align: center;
-    margin-left: 295px;
 }
 .row{
     padding-right: 425px;

@@ -16,7 +16,7 @@
                     .thumbnail
                         = link_to (image_tag benefit.image.url), benefit
                         %h3= link_to benefit.title, benefit
-                            
+            = will_paginate @courses
             %br
         = link_to "See All our Partners", partners_path, class: "btn btn-default btn-partners"
         - if current_user.try(:admin?)

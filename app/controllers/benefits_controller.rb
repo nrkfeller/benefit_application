@@ -3,7 +3,7 @@ class BenefitsController < ApplicationController
     before_action :require_admin, only: [:new, :edit, :update, :destroy]
     
     def index
-        @benefits = Benefit.search(params[:search])
+        @benefits = Benefit.search(params[:search]).paginate(page: params[:page], per_page: 15)
         #@benefits = Benefit.all.order("created_at DESC")
     end
     

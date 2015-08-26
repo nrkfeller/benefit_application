@@ -1,0 +1,5 @@
+$('#courses').append('<%= escape_javascript render(@courses) %>');
+$('.pagination').replaceWith('<%= escape_javascript will_paginate(@courses) %>');
+
+// https://richonrails.com/articles/endless-scrolling
+// index.html.haml - application.js
