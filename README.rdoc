@@ -4,6 +4,12 @@ blog page
 contact us page
 about page
 social media + other links
+free trial button size
+floating images for benefits index
 
 *underline hover benefits index
 *fix panels in partner page
+*(Y)our benefits --> Your benfits
+* remove name on partners 
+* link perks with benefits page
+* 

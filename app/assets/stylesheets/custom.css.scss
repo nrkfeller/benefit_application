@@ -6,12 +6,12 @@ $navbar-default-bg: #3a3f41;
 @import url('//fonts.googleapis.com/css?family=Poiret+One|Arvo|Questrial');
 
 #logo{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 25px;
     padding-right: 30px;
     float: left;
-    font-size: 1em;
+    font-size: 2em;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -30,6 +30,12 @@ $navbar-default-bg: #3a3f41;
 
 body{
     padding-top: 40px;
+}
+.about{
+    text-align: left;
+    font-size: 1.2em;
+    color: #263F40;
+    line-height: 30px;
 }
 
 .nav_item{
