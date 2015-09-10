@@ -7,6 +7,8 @@ class BenefitsController < ApplicationController
         #@benefits = Benefit.all.order("created_at DESC")
     end
     
+    
+    
     def new
        @benefit = Benefit.new 
     end

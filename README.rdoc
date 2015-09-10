@@ -1,5 +1,6 @@
 Ready for AWS deployment
 mailers to benefits, contacts
+parnters right left wheel
 blog page
 contact us page
 about page
