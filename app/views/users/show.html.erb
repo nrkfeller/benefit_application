@@ -1,14 +1,19 @@
-<div class="page">
-  <h1><%= @user.email %></h1>
-  <h3>The Benefits you have redeemed:</h3>
-  <% @user.benefits.each do |benefit| %>
-    <div class="box panel panel-default">
-        <%= link_to (image_tag benefit.image.url(:medium)), benefit %>
-        <div class="panel-body">
-          <h3><%= link_to benefit.title, benefit %></h3>
-          <h5>Tags:</h5>
-          <%= render benefit.categories %>
+<div class="benpage">
+  <div class="page">
+    <ul class="nav nav-pills nav-justified benbar">
+    <h1><%= @user.email %></h1>
+    <h4>The Benefits you have redeemed:</h4>
+    <br/>
+    <% @user.benefits.each do |benefit| %>
+      <div class="col-sm-2 col-md-4">
+        <div class="thumbnail">
+          <%= link_to (image_tag benefit.image.url), benefit %>
+          <h3>
+            <%= link_to benefit.title, benefit %>
+          </h3>
         </div>
-    </div>
-  <% end %>
+      </div>
+    <% end %>
+    <br/>
+  </div>
 </div>
